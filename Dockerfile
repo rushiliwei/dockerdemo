@@ -11,8 +11,8 @@ RUN chmod 755 /home/dck.sh
 # RUN pwd
 # RUN ls
 
-# WORKDIR /home/mywork/dockerdemo
-WORKDIR /home/mywork/cctst
+WORKDIR /home/mywork/dockerdemo
+# WORKDIR /home/mywork/cctst
 
 RUN bundle install
 
