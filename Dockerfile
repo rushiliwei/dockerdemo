@@ -4,10 +4,13 @@ FROM daocloud.io/rushiliwei/tc_rails:rails_proj
 MAINTAINER rpj leo
 
 COPY dck.sh /home
-# ADD dck.sh /home
-COPY . /home/mywork
-
 RUN chmod 755 /home/dck.sh
+RUN mkdir -p /home/mywork/dockerdemo
+
+# ADD dck.sh /home
+COPY . /home/mywork/dockerdemo/
+
+
 # RUN pwd
 # RUN ls
 
